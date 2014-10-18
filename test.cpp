@@ -8,11 +8,13 @@ int main(){
 	GpioHandler gpio;
 	for (int i=0; i<50; i++)
         {
-                digitalWrite (1, HIGH);
-                digitalWrite (14, HIGH);
+                cout << "HIGH #" << i << endl;
+                digitalWrite (11, HIGH);
+                digitalWrite (5, HIGH);
                 delay (1000);
-                digitalWrite (1, LOW);
-                digitalWrite (14, LOW);
+		cout << "LOW #" << i << endl;
+                digitalWrite (11, LOW);
+                digitalWrite (5, LOW);
                 delay (500);
         }
 
